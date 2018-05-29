@@ -1,0 +1,22 @@
+<style>
+.card{margin-top:10px}
+</style>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+    <li class="breadcrumb-item active">{{route.snapshot.params['name']|uppercase}}</li>
+</ol>
+<div class="container">
+<div class="row m-1 justify-content-around" >
+  <a *ngFor="let p of prod" routerLink="/product/{{p.category|lowercase}}/{{p.id}}">
+    <div class="card" style="width:15rem">
+        <img class="card-img-top" src={{p.img}} alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title">{{p.id}}:{{p.name}}</h4>
+            <p class="card-text">{{p.desc}}</p>
+            <p class="card-text">Rs.{{p.price}}</p>
+             <a href="#" class="btn btn-success btn-block">See Product</a>
+        </div>
+    </div>
+  </a>
+</div>
+</div>

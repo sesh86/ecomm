@@ -1,0 +1,25 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+.inst,.gp,.fb,.tw,.soc_icns li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: background 0.2s;
+    outline: 0;
+}
+.fb{background: #007ab3;color:white}
+.tw{background: #1DA1F2;color:white}
+.gp{background: #DB4437;color:white}
+.inst{background: #262626;color:white}

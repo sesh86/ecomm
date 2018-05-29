@@ -1,0 +1,22 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+    <li class="breadcrumb-item"><a routerLink="/shop/{{route.snapshot.params['cat']|uppercase}}">{{route.snapshot.params['cat']|uppercase}}</a></li>
+    <li class="breadcrumb-item active">{{route.snapshot.params['name']|uppercase}}</li>
+</ol>
+<div class="container">
+<div class="row justify-content-around m-1">
+  <div class="col-md-4">
+    <img style="width:100%" src={{prod[0].img}} alt="">
+  </div>
+  <div class="col-md-7">
+    <div class="card" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">{{prod[0].id}}:{{prod[0].name}}</h4>
+            <p class="card-text">{{prod[0].desc}}</p>
+            <h4>Rs.{{prod[0].price}}</h4>
+             <a href="#" class="btn btn-success btn-block">Add to Cart</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
